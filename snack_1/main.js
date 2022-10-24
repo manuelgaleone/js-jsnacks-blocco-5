@@ -1,5 +1,5 @@
 /*
-Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
+Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, kg e lunghezza.
 
 Calcola quanto pesano tutte le zucchine.
 */
@@ -7,54 +7,66 @@ Calcola quanto pesano tutte le zucchine.
 //Creo la lista di Zucchine
 let zucchine = [
     {
-        Varietà: "Zucchina Mario",
-        Peso: Number("10") + " " + "kg",
-        Lunghezza: Number("25") + " " + "cm"
+        varietà: "Zucchina Mario",
+        kg: 10,
+        lunghezza: Number("25") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Antonio",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("20") + " " + "cm"
+        varietà: "Zucchina Antonio",
+        kg: 12,
+        lunghezza: Number("20") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Mauro",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("18") + " " + "cm"
+        varietà: "Zucchina Mauro",
+        kg: 12,
+        lunghezza: Number("18") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Giovanni",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("29") + " " + "cm"
+        varietà: "Zucchina Giovanni",
+        kg: 12,
+        lunghezza: Number("29") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Alpi",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("20") + " " + "cm"
+        varietà: "Zucchina Alpi",
+        kg: 12,
+        lunghezza: Number("20") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Andrea",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("19") + " " + "cm"
+        varietà: "Zucchina Andrea",
+        kg: 12,
+        lunghezza: Number("19") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Paolo",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("25") + " " + "cm"
+        varietà: "Zucchina Paolo",
+        kg: 12,
+        lunghezza: Number("25") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Manuel",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("20") + " " + "cm"
+        varietà: "Zucchina Manuel",
+        kg: 12, 
+        lunghezza: Number("20") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Pasquale",
-        Peso: Number("12") + " " + "kg",
-        Lunghezza: Number("5") + " " + "cm"
+        varietà: "Zucchina Pasquale",
+        kg: 12,
+        lunghezza: Number("5") + " " + "cm"
     },
     {
-        Varietà: "Zucchina Lucia",
-        Peso: Number("7") + " " + "kg",
-        Lunghezza: Number("2") + " " + "cm"
+        varietà: "Zucchina Lucia",
+        kg: 7,
+        lunghezza: Number("2") + " " + "cm"
     }
 ];
-//console.log(zucchine[0]);
+
+//console.log(zucchine.kg);
+
+//Calcolo il kg di ciascuna
+let somma = 0;
+
+zucchine.forEach(element => {
+
+    somma += element.kg;
+
+});
+
+console.log(somma);
